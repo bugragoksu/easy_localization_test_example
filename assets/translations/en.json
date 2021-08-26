@@ -1,4 +1,9 @@
 {
     "hello":"hello",
-    "world":"world"
+    "world":"world",
+    "expenditures":{
+        "price":"price",
+        "symbol" :"$",
+        "total_price": "Total @:expenditures.price is {value}@:expenditures.symbol"
+    }
 }

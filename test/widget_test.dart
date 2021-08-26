@@ -47,6 +47,7 @@ Future<void> main() async {
       expect(worldFinner, findsOneWidget);
     });
   });
+
   testWidgets('[easy localization change to tr locale] test',
       (WidgetTester tester) async {
     await tester.runAsync(() async {
@@ -75,5 +76,11 @@ Future<void> main() async {
       final worldFinnerTr = find.text('dünya');
       expect(worldFinnerTr, findsOneWidget);
     });
+  });
+
+  test('[easy localization linked translation] test', () {
+    expect(tr('expenditures.price'), 'fiyat');
+    expect(tr('expenditures.total_price', namedArgs: {"value": "1023.45"}),
+        "Toplam fiyat 1023.45₺'dir");
   });
 }

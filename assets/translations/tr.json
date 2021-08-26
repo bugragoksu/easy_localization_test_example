@@ -1,4 +1,9 @@
 {
     "hello":"merhaba",
-    "world":"dünya"
+    "world":"dünya",
+    "expenditures":{
+        "price":"fiyat",
+        "symbol" :"₺",
+        "total_price": "Toplam @:expenditures.price {value}@:expenditures.symbol'dir"
+    }
 }

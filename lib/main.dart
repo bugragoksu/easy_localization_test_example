@@ -50,7 +50,13 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text('hello'.tr()), Text('world'.tr())],
+          children: [
+            Text('hello'.tr()),
+            Text('world'.tr()),
+            Text('expenditures.price'.tr()),
+            Text('expenditures.symbol'.tr()),
+            Text('expenditures.total_price'.tr(namedArgs: {"value": "1042.53"}))
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
