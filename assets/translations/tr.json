@@ -5,5 +5,15 @@
         "price":"fiyat",
         "symbol" :"₺",
         "total_price": "Toplam @:expenditures.price {value}@:expenditures.symbol'dir"
-    }
+    },
+    "gender":{
+        "male":"Merhaba {} bey",
+        "female":"Merhaba {} hanim",
+        "other":"Merhaba {}"
+     },
+     "school":{
+        "university":"{} üniversitesi",
+        "highschool":"{} lisesi",
+        "other":"{} okulu"
+     }
 }

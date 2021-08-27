@@ -78,6 +78,17 @@ Future<void> main() async {
     });
   });
 
+  test('[easy localization pass argument] test', () {
+    expect('gender'.tr(gender: 'male', args: ['Buğra']), 'Merhaba Buğra bey');
+    expect('gender'.tr(gender: 'female', args: ['Elif']), 'Merhaba Elif hanim');
+    expect('gender'.tr(gender: 'other', args: ['Murat']), 'Merhaba Murat');
+
+    expect('school'.tr(gender: 'university', args: ['Mersin']),
+        'Mersin üniversitesi');
+    expect(
+        'school'.tr(gender: 'highschool', args: ['Mersin']), 'Mersin lisesi');
+    expect('school'.tr(gender: 'other', args: ['Mersin']), 'Mersin okulu');
+  });
   test('[easy localization linked translation] test', () {
     expect(tr('expenditures.price'), 'fiyat');
     expect(tr('expenditures.total_price', namedArgs: {"value": "1023.45"}),

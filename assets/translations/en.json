@@ -5,5 +5,15 @@
         "price":"price",
         "symbol" :"$",
         "total_price": "Total @:expenditures.price is {value}@:expenditures.symbol"
-    }
+    }, 
+    "gender":{
+        "male":"Hi man ;) {}",
+        "female":"Hello girl :) {}",
+        "other":"Hello {}"
+     }, 
+     "school":{
+        "university":"{} university",
+        "highschool":"{} highschool",
+        "other":"{} school"
+     }
 }
