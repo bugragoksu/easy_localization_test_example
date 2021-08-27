@@ -15,5 +15,11 @@
         "university":"{} university",
         "highschool":"{} highschool",
         "other":"{} school"
-     }
+     },
+     "money": {
+        "zero": "You have not money",
+        "one": "You have {} dollar",
+        "many": "You have {} dollars",
+        "other": "You have {} dollars"
+      }
 }

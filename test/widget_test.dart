@@ -94,4 +94,16 @@ Future<void> main() async {
     expect(tr('expenditures.total_price', namedArgs: {"value": "1023.45"}),
         "Toplam fiyat 1023.45₺'dir");
   });
+
+  testWidgets('[easy localization plural] test', (WidgetTester tester) async {
+    await tester.runAsync(() async {
+      await tester.pumpWidget(makeTestableWidget());
+      expect('money'.plural(21.5), "You have 21.5 dollars");
+      expect('money'.plural(1), "You have 1 dollar");
+      expect('money'.plural(0), "You have not money");
+      await LocalizationManager.instance.changeLocale(_context);
+      await tester.pump();
+      expect('money'.plural(21.5), '21.5 liran var');
+    });
+  });
 }

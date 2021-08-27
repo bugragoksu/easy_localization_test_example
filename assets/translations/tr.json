@@ -15,5 +15,11 @@
         "university":"{} üniversitesi",
         "highschool":"{} lisesi",
         "other":"{} okulu"
-     }
+     },
+     "money": {
+        "zero": "Hiç paran yok",
+        "one": "{} liran var",
+        "many": "{} liran var",
+        "other": "{} liran var"
+      }
 }
